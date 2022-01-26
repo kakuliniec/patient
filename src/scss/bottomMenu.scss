@@ -1,13 +1,22 @@
-a:link {
-    text-decoration: none;
-    color: #757575;
-}
-
 a:active {
     text-decoration: none;
     color: #0253B1;
 }
 
+a:hover {
+    text-decoration: none;
+    color: #757575;
+}
+
+a:link {
+    text-decoration: none;
+    color: #757575;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #757575;
+}
 
 
 .bottomMenu {
@@ -24,7 +33,7 @@ a:active {
     font-family: 'Open Sans', sans-serif;
 }
 
-.navigationBottom {
+.navigation {
     background: url(./img/bottom-menu.png.png) no-repeat center;
     font-size: 10px;
     font-weight: 600;
@@ -80,6 +89,16 @@ a:active {
         width: 34%;
     }
 
+    &__more {
+        background: url(./icon/wiecej-bottom.svg) no-repeat top center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+        margin-left: 10px;
+    }
+    
+
     &__drugs {
         background: url(./icon/leki-bottom.svg) no-repeat top center;
         display: flex;
@@ -94,7 +113,7 @@ a:active {
         align-items: flex-end;
         justify-content: space-between;
         padding-left: 8px;
-        width: 34%;
+        width: 36%;
     }
 
 }
