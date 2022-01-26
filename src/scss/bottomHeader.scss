@@ -1,0 +1,31 @@
+.bottomMenu {
+    height: 64px;
+    z-index: 1030;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: transparent;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans',sans-serif;
+}
+
+.navigationBottom {
+    background: url(./img/bottom-menu.png.png) no-repeat center;
+    height: 56px;
+    font-size: 10px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+
+    &__left {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+}

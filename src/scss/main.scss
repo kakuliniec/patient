@@ -1,0 +1,27 @@
+@import "./normalize";
+@import url(./bottomHeader.scss);
+
+
+
+body {
+    background: #E5E5E5;
+    font-size: 14px;
+    color: #333;
+    font-family: "Arial";
+}
+
+
+html {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
