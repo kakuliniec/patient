@@ -1,0 +1,28 @@
+.portal {
+    .container {
+        padding: 96px 8px 0px 8px;
+    }
+}
+
+.upcoming {
+        max-width: 304px;
+
+        &__msg
+        {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            background: #ffffff;
+            border-radius: 8px;
+            padding-right: 12px;
+    
+            &--info {
+                padding: 16px 16px 16px 8px;
+                margin: 0 auto;
+                line-height: 19px;
+                border-radius: 4px;
+            }
+    }
+    }
+
+
