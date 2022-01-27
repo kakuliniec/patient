@@ -49,3 +49,26 @@ color: #0253B1;
 
     }
 }
+
+.history-events {
+
+    &__header {
+        font-size: 14px;
+        line-height: 19px;
+        margin: 0 auto;
+        padding: 8px 172px 4px 16px;
+        font-weight: normal;
+    }
+
+.visit__middle {
+        padding: 0px 68px 16px 16px;
+    }
+
+    .visit__bottom {
+        padding: 0px 8px 16px 165px;
+
+        &--change {
+            margin-right: 0px;
+        }
+    }
+}
