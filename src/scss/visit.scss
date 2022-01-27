@@ -2,4 +2,56 @@
     .container {
         padding: 16px 0px 8px 0px;
     }
+
+    &__details {
+        padding: 0px 0px 0px 8px;
+    }
+
+    &__header {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 19px;
+        color: #0253B1;
+        margin: 0 auto;
+        padding: 16px 119px 4px 16px;
+    }
+
+    &__middle {
+        padding: 0px 31px 16px 16px;
+        display: flex;
+        justify-content: space-between;
+
+        &--address {
+            line-height: 19px;
+        }
+
+        &--doctor {
+            line-height: 19px;
+        }
+    }
+
+    &__msg {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        &--blueLine {
+            position: absolute;
+        }
+    }
+
+    &__top {
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 4px;
+        justify-content: space-between;
+        padding: 9px 14px 4px 16px;
+
+        &--event {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+
 }
