@@ -1,22 +1,25 @@
 .hero {
-
     .container {
         padding: 96px 8px 0px 8px;
+    }
+
+    &__content {
+        max-width: 304px;
+    }
+
+    &__info {
+        padding: 16px 16px 16px 8px;
+        margin: 0 auto;
+        line-height: 19px;
+        border-radius: 4px;
     }
 
     &__upcoming {
         display: flex;
         align-content: center;
         justify-content: center;
-
-        &--info {
-            padding: 16px 16px 16px 8px;
-            margin: 0 auto;
-            line-height: 19px;
-            border-radius: 4px;
-        }
-    }
-
-
-
+        background: #ffffff;
+        border-radius: 8px;
+        padding-right: 12px;
+}
 }
