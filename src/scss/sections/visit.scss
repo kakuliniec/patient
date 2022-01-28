@@ -1,0 +1,92 @@
+.visit {
+    .container {
+        padding: 16px 0px 8px 0px;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0px 16px 16px 73px;
+
+        &--cancel {
+            background: #0253B1;
+            border-radius: 20px;
+            padding: 10px 16px;
+            align-items: center;
+            text-align: center;
+            color: #FFFFFF;
+            border: 1px solid #0253B1;
+
+        }
+
+        &--change {
+            background: #FFFFFF;
+            border: 1px solid #0253B1;
+            border-radius: 20px;
+            padding: 10px 16px;
+            align-items: center;
+            text-align: center;
+            color: #0253B1;
+            margin-right: 14px;
+        }
+
+    }
+
+    &__details {
+        padding: 0px 0px 0px 10px;
+    }
+
+    &__header {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 19px;
+        color: #0253B1;
+        margin: 0 auto;
+        padding: 16px 119px 4px 16px;
+    }
+
+    &__middle {
+        padding: 0px 31px 13px 16px;
+        display: flex;
+        justify-content: space-between;
+
+        &--address {
+            line-height: 19px;
+        }
+
+        &--doctor {
+            line-height: 19px;
+        }
+
+        &--iconLocation {
+            padding-top: 2px;
+        }
+    }
+
+    &__msg {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background: #FFFFFF;
+        border-radius: 8px;
+
+        &--blueLine {
+            position: absolute;
+        }
+    }
+
+    &__top {
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 4px;
+        justify-content: space-between;
+        padding: 9px 14px 4px 16px;
+
+        &--event {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+
+}
