@@ -11,5 +11,32 @@
 }
 
 .header {
-    display: none;
+    max-width: 1280px;
+    height: 72px;
+    left: 50%;
+    background: #fff;
+    box-shadow: 0 4px 16px rgb(0 0 0 / 15%);
+
+    &__left {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        margin: 0px 54px 26px 0px;
+    }
+
+    @media (max-width: $desktop) {
+        display: none;
+    }
+
+    .container {
+        padding: 12px 23px 12px 72px;
+    }
+
+    .navigation {
+        font-size: 13px;
+        line-height: 18px;
+    }
 }
