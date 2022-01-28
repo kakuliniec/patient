@@ -7,7 +7,6 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     margin: 0 auto;
-
 }
 
 .header {
@@ -19,12 +18,12 @@
 
     &__left {
         display: flex;
-        align-items: flex-end;
+        align-items: center;
         justify-content: space-between;
     }
 
     &__logo {
-        margin: 0px 54px 26px 0px;
+        padding: 0px 50px 14px 0px;
     }
 
     @media (max-width: $desktop) {
@@ -36,19 +35,50 @@
     }
 
     .navigation {
-        font-size: 13px;
+        font-weight: 400;
+        font-size: 14px;
         line-height: 18px;
 
         &__askDoctor {
-            background: url(./icon/) no-repeat top center;
+            background: url(./icon/askDoctor.svg) no-repeat left center;
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding-top: 30px;
+            padding: 0px 0px 0px 29px;
+            margin-right: 228px;
+        }
+
+        &__drugs {
+            padding: 0px 0px 0px 29px;
+            margin-right: 35px;
+            background: url(./icon/leki-bottom.svg) no-repeat left center;
+        }
+
+        &__evisit {
+            padding: 0px 0px 0px 29px;
+            margin-right: 35px;
+            background: url(./icon/ekonsultacje-bottom.svg) no-repeat left center;
+        }
+
+        &__inbox {
+            background: url(./icon/inbox.svg) no-repeat top center;
         }
 
         &__left {
             list-style: none;
+            width: 100%;
+            padding-left: 0px;
+            align-items: center;
+        }
+
+        &__profile {
+            background: url(./icon/profile.svg) no-repeat top center;
+        }
+
+        &__treatment {
+            padding: 0px 0px 0px 29px;
+            margin-right: 35px;
+            background: url(./icon/leczenie-bottom.svg) no-repeat left center;
         }
     }
 }
