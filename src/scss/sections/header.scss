@@ -38,5 +38,17 @@
     .navigation {
         font-size: 13px;
         line-height: 18px;
+
+        &__askDoctor {
+            background: url(./icon/) no-repeat top center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 30px;
+        }
+
+        &__left {
+            list-style: none;
+        }
     }
 }
