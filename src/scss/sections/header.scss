@@ -11,9 +11,5 @@
 }
 
 .header {
-display: none;
-    @media (min-width: $desktop) {
-        padding: 64px 16px 120px;
-    }
+    display: none;
 }
-
