@@ -14,7 +14,6 @@
         margin-left: 8px;
         margin-right: -17px;
 
-
         @media (min-width: $desktop) {
             padding: 24px 272px 24px 140px;
             margin: 0;
@@ -24,7 +23,7 @@
         &--close {
             border: none;
             background-color: transparent;
-            color: #0253B1;
+            color: #0253b1;
             @media (max-width: $desktop) {
                 display: none;
             }
@@ -33,7 +32,7 @@
         &--enter {
             background-color: transparent;
             border: none;
-            color: #0253B1;
+            color: #0253b1;
             @media (max-width: $desktop) {
                 display: none;
             }
@@ -41,7 +40,6 @@
 
         &--other {
             padding: 5px 8px 5px 8px;
-
 
             @media (max-width: $desktop) {
                 display: none;
@@ -98,20 +96,19 @@
 
 .history-events {
     margin-bottom: 16px;
-    
+
     @media (min-width: $desktop) {
         display: flex;
         margin-bottom: 16px;
     }
 
     &__details {
-            text-decoration: none;
-            visibility: visible;
-            color: #0258ba;
-            @media (max-width: $desktop) {
-                display: none;
-            }
-        
+        text-decoration: none;
+        visibility: visible;
+        color: #0258ba;
+        @media (max-width: $desktop) {
+            display: none;
+        }
     }
 
     &__header {
@@ -128,9 +125,14 @@
             margin-top: 31px;
             margin-right: 8px;
         }
-
-
     }
 
-
+    &__month {
+        font-size: 16px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin: 16px 0px;
+    }
 }
