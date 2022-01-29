@@ -3,9 +3,17 @@
 
     &__msg {
 
+    padding: 12px 17px 12px 16px;
+    background-color: #f2c94c;
+    background-image: url(./img/banner-background.png);
+    background-size: 500px;
+    border-radius: 8px;
+
 
         &--text {
-
+            font-weight: 700;
+            line-height: 18px;
+            padding-right: 283px;
         }
     }
 
