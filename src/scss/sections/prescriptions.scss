@@ -1,0 +1,51 @@
+.prescriptions {
+    position: relative;
+    margin: 16px 0px;
+    display: flex;
+    flex-flow: column;
+
+
+    &__msg {
+        background: #FFFFFF;
+        border: 1.5px dashed #E0E0E0;
+        box-sizing: border-box;
+        border-radius: 8px;
+        padding: 8px 16px;
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+        &--text {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            background: url(./icon/news.svg) no-repeat left center;
+            padding-left: 24px;
+        }
+
+        &--more {
+        }
+    }
+
+
+    &__rectangle {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+
+        &--big {
+            width: 98%;
+        }
+        
+        &--small {
+            width: 96%;
+        }
+    }
+    
+    @media (max-width: $desktop) {
+        display: none;
+    }
+}
+
+
