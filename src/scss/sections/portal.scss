@@ -1,5 +1,15 @@
 .portal {
-.container {
-    padding: 16px 72px 24px 72px;
-}
+    .container {
+        @media (min-width: $desktop) {
+            padding: 16px 72px 24px 72px;
+        }
+    }
+
+    &__left {
+        &--timeline {
+            background: linear-gradient(0deg, rgba(239, 239, 239, 0.2), rgba(239, 239, 239, 0.2)),
+                url(./img/background.png);
+            background-size: cover;
+        }
+    }
 }
