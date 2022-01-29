@@ -97,23 +97,40 @@
 }
 
 .history-events {
+    margin-bottom: 16px;
+    
+    @media (min-width: $desktop) {
+        display: flex;
+        margin-bottom: 16px;
+    }
+
+    &__details {
+            text-decoration: none;
+            visibility: visible;
+            color: #0258ba;
+            @media (max-width: $desktop) {
+                display: none;
+            }
+        
+    }
+
     &__header {
         font-size: 14px;
         line-height: 19px;
         margin: 0 auto;
         padding: 8px 172px 4px 16px;
         font-weight: normal;
-    }
 
-    .visit__middle {
-        padding: 0px 68px 16px 16px;
-    }
-
-    .visit__bottom {
-        padding: 0px 8px 16px 165px;
-
-        &--change {
-            margin-right: 0px;
+        @media (min-width: $desktop) {
+            padding: 0px;
+            max-width: 88px;
+            margin-left: 20px;
+            margin-top: 31px;
+            margin-right: 8px;
         }
+
+
     }
+
+
 }
