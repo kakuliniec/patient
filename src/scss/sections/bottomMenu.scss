@@ -11,12 +11,12 @@ a:hover {
 a:link {
     text-decoration: none;
     color: #757575;
+
+    @media (min-width: $desktop) {
+        color: #0258BA;
+    }
 }
 
-a:nav {
-    text-decoration: none;
-    color: #0253B1;
-}
 
 a:visited {
     text-decoration: none;
