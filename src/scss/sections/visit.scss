@@ -3,46 +3,61 @@
         padding: 16px 0px 8px 0px;
     }
 
+    @media (min-width: $desktop) {
+        display: flex;
+        position: relative;
+    }
+
     &__bottom {
         display: flex;
         justify-content: flex-end;
         padding: 0px 16px 16px 73px;
 
         &--cancel {
-            background: #0253B1;
+            background: #0253b1;
             border-radius: 20px;
             padding: 10px 16px;
             align-items: center;
             text-align: center;
-            color: #FFFFFF;
-            border: 1px solid #0253B1;
-
+            color: #ffffff;
+            border: 1px solid #0253b1;
         }
 
         &--change {
-            background: #FFFFFF;
-            border: 1px solid #0253B1;
+            background: #ffffff;
+            border: 1px solid #0253b1;
             border-radius: 20px;
             padding: 10px 16px;
             align-items: center;
             text-align: center;
-            color: #0253B1;
+            color: #0253b1;
             margin-right: 14px;
         }
-
     }
 
     &__details {
         padding: 0px 0px 0px 10px;
     }
 
+    &__elipseBlue {
+        @media (max-width: $desktop) {
+            display: none;
+        }
+    }
+
     &__header {
         font-weight: bold;
         font-size: 14px;
         line-height: 19px;
-        color: #0253B1;
+        color: #0253b1;
         margin: 0 auto;
         padding: 16px 119px 4px 16px;
+
+        @media (min-width: $desktop) {
+            position: absolute;
+            top: 16px;
+            left: 20px;
+        }
     }
 
     &__middle {
@@ -67,13 +82,40 @@
         display: flex;
         flex-direction: column;
         position: relative;
-        background: #FFFFFF;
+        background: #ffffff;
         border-radius: 8px;
+
+        @media (min-width: $desktop) {
+            max-height: 98px;
+            flex-direction: row;
+        }
 
         &--blueLine {
             position: absolute;
+            @media (min-width: $desktop) {
+                left: 0%;
+                right: 0%;
+                top: 0%;
+                bottom: 0%;
+                height: 100%;
+                max-height: 98px;
+            }
         }
     }
+
+    &__rectangleWhite {
+        @media (max-width: $desktop) {
+            display: none;
+        }
+    }
+
+&__right {
+    display: flex;
+
+    @media (max-width: $desktop) {
+        display: none;
+    }
+}
 
     &__top {
         display: flex;
@@ -86,7 +128,14 @@
             font-weight: 600;
             font-size: 16px;
             line-height: 22px;
+            visibility: hidden;
+
+            @media (min-width: $desktop) {
+                &:after {
+                    content: "Internista";
+                    visibility: visible;
+                }
+            }
         }
     }
-
 }

@@ -1,6 +1,6 @@
 .prescriptions {
     position: relative;
-    margin: 16px 0px;
+    margin: 12px 0px;
     display: flex;
     flex-flow: column;
 
@@ -36,10 +36,12 @@
 
         &--big {
             width: 98%;
+            margin-top: -2px;
         }
         
         &--small {
             width: 96%;
+            margin-top: -2px;
         }
     }
 

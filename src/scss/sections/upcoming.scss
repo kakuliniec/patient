@@ -10,6 +10,12 @@
 .upcoming {
     max-width: 304px;
 
+    @media (min-width: $desktop) {
+        max-width: 680px;
+        margin: 0px 0px 16px 140px;
+    }
+
+
     &__msg {
         display: flex;
         align-content: center;
@@ -18,11 +24,21 @@
         border-radius: 8px;
         padding-right: 12px;
 
+        @media (min-width: $desktop) {
+        }
+
+
         &--info {
             padding: 16px 16px 16px 8px;
             margin: 0 auto;
             line-height: 19px;
             border-radius: 4px;
+
+            @media (min-width: $desktop) {
+                margin-left: 0px;
+            }
+    
+
         }
     }
 }
