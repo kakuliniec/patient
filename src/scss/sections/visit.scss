@@ -21,6 +21,11 @@
             text-align: center;
             color: #ffffff;
             border: 1px solid #0253b1;
+
+            @media (min-width: $desktop) {
+                padding: 5px 16px;
+                margin: 10px 0px 16px 8px;
+            }
         }
 
         &--change {
@@ -32,6 +37,16 @@
             text-align: center;
             color: #0253b1;
             margin-right: 14px;
+
+            @media (min-width: $desktop) {
+                padding: 5px 16px;
+                margin: 10px 0px 16px 0px;
+            }
+        }
+
+        @media (min-width: $desktop) {
+            margin-left: 194px;
+            padding: 0px;
         }
     }
 
@@ -39,9 +54,9 @@
         padding: 0px 0px 0px 10px;
     }
 
-    &__elipseBlue {
-        @media (max-width: $desktop) {
-            display: none;
+    &__desktop {
+        @media (min-width: $desktop) {
+            display: flex;
         }
     }
 
@@ -57,13 +72,38 @@
             position: absolute;
             top: 16px;
             left: 20px;
+            padding: 22px 0px 0px 0px;
+        }
+    }
+
+    &__left {
+        display: flex;
+        position: relative;
+
+        @media (max-width: $desktop) {
+            display: none;
+        }
+
+        &--elipse {
+            margin-right: 16px;
+            max-width: 8px;
+            @media (max-width: $desktop) {
+                display: none;
+            }
+        }
+
+        &--rectangle {
+            margin: 0px 12px 16px 0px;
+
+            @media (max-width: $desktop) {
+                display: none;
+            }
         }
     }
 
     &__middle {
         padding: 0px 31px 13px 16px;
         display: flex;
-        justify-content: space-between;
 
         &--address {
             line-height: 19px;
@@ -76,6 +116,10 @@
         &--iconLocation {
             padding-top: 2px;
         }
+
+        @media (min-width: $desktop) {
+            padding: 0px 0px 13px 16px;
+        }
     }
 
     &__msg {
@@ -87,7 +131,6 @@
 
         @media (min-width: $desktop) {
             max-height: 98px;
-            flex-direction: row;
         }
 
         &--blueLine {
@@ -109,14 +152,6 @@
         }
     }
 
-&__right {
-    display: flex;
-
-    @media (max-width: $desktop) {
-        display: none;
-    }
-}
-
     &__top {
         display: flex;
         align-items: baseline;
@@ -124,18 +159,39 @@
         justify-content: space-between;
         padding: 9px 14px 4px 16px;
 
+        @media (min-width: $desktop) {
+            visibility: hidden;
+            position: relative;
+        }
+
+        &--arrow {
+            @media (min-width: $desktop) {
+                display: none;
+            }
+        }
+
         &--event {
             font-weight: 600;
             font-size: 16px;
             line-height: 22px;
-            visibility: hidden;
+        }
+    }
 
-            @media (min-width: $desktop) {
-                &:after {
-                    content: "Internista";
-                    visibility: visible;
-                }
-            }
+    &__top:after {
+        @media (min-width: $desktop) {
+            visibility: visible;
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "Internista";
+            display: flex;
+            align-items: baseline;
+            margin-bottom: 4px;
+            justify-content: space-between;
+            padding: 9px 14px 4px 16px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
         }
     }
 }
