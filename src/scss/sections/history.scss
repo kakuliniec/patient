@@ -1,13 +1,12 @@
 .button-filter {
-background: #FFFFFF;
-border: 1px solid #E0E0E0;
-box-sizing: border-box;
-border-radius: 20px;
-color: #0253B1;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    border-radius: 20px;
+    color: #0253b1;
 }
 
 .history {
-
     &__buttons {
         display: flex;
         align-items: center;
@@ -15,12 +14,50 @@ color: #0253B1;
         margin-left: 8px;
         margin-right: -17px;
 
+
+        @media (min-width: $desktop) {
+            padding: 24px 272px 24px 140px;
+            margin: 0;
+            max-height: 68px;
+        }
+
+        &--close {
+            border: none;
+            background-color: transparent;
+            color: #0253B1;
+            @media (max-width: $desktop) {
+                display: none;
+            }
+        }
+
+        &--enter {
+            background-color: transparent;
+            border: none;
+            color: #0253B1;
+            @media (max-width: $desktop) {
+                display: none;
+            }
+        }
+
+        &--other {
+            padding: 5px 8px 5px 8px;
+
+
+            @media (max-width: $desktop) {
+                display: none;
+            }
+        }
+
         &--prescriptions {
             background-image: url(./icon/history-prescription.svg);
             background-repeat: no-repeat;
             padding: 11px 16px 11px 36px;
             background-position: 12px center;
             margin-right: 8px;
+
+            @media (min-width: $desktop) {
+                padding: 5px 16px 5px 28px;
+            }
         }
 
         &--tests {
@@ -29,6 +66,9 @@ color: #0253B1;
             padding: 11px 16px 11px 36px;
             background-position: 12px center;
             margin-right: 8px;
+            @media (min-width: $desktop) {
+                padding: 5px 16px 5px 36px;
+            }
         }
 
         &--visits {
@@ -37,6 +77,9 @@ color: #0253B1;
             padding: 11px 16px 11px 36px;
             background-position: 12px center;
             margin-right: 8px;
+            @media (min-width: $desktop) {
+                padding: 5px 16px 5px 28px;
+            }
         }
     }
 
@@ -47,11 +90,13 @@ color: #0253B1;
         margin: 0 auto;
         padding: 9px 235px 8px 8px;
 
+        @media (min-width: $desktop) {
+            display: none;
+        }
     }
 }
 
 .history-events {
-
     &__header {
         font-size: 14px;
         line-height: 19px;
@@ -60,7 +105,7 @@ color: #0253B1;
         font-weight: normal;
     }
 
-.visit__middle {
+    .visit__middle {
         padding: 0px 68px 16px 16px;
     }
 
