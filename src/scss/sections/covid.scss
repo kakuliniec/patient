@@ -1,9 +1,14 @@
 .covid {
     position: relative;
 
-    .container {
-        padding: 16px 16px 16px 72px;
+    &__msg {
+
+
+        &--text {
+
+        }
     }
+
 
     @media (max-width: $desktop) {
         display: none;
