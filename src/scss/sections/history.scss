@@ -134,5 +134,10 @@
         align-items: center;
         text-align: center;
         margin: 16px 0px;
+        display: block;
+        padding-left: 140px;
+        @media (max-width: $desktop) {
+            display: none;
+        }
     }
 }
