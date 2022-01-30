@@ -1,3 +1,7 @@
+a {
+    text-decoration: none;
+}
+
 a:active {
     text-decoration: none;
     color: #0253b1;
@@ -7,7 +11,6 @@ a:hover {
     text-decoration: none;
     color: #0253b1;
 }
-
 
 a:visited {
     text-decoration: none;
@@ -29,10 +32,12 @@ a:visited {
     margin-bottom: 0;
     display: flex;
     justify-content: center;
-    &::after, &::before {
+
+    &::after,
+    &::before {
         display: block;
         height: 54px;
-        content: '';
+        content: "";
         width: 30%;
         position: absolute;
         bottom: 0;
@@ -47,7 +52,7 @@ a:visited {
     &::before {
         right: 0;
     }
-    
+
     &__background {
         position: absolute;
         width: 320px;
@@ -70,6 +75,26 @@ a:visited {
     justify-content: space-between;
     align-items: flex-end;
     width: 100%;
+
+    &__active {
+        &--text {
+            color: #0253b1;
+            white-space: nowrap;
+            position: absolute;
+            bottom: 0px;
+        }
+        &--logo {
+            max-width: 24px;
+            width: initial;
+            height: initial;
+            z-index: 1;
+            position: initial;
+            transform: initial;
+            margin-top: 4px;
+            filter: brightness(0) saturate(100%) invert(17%) sepia(52%) saturate(5162%) hue-rotate(203deg)
+                brightness(98%) contrast(98%);
+        }
+    }
 
     &__bookNow {
         width: 52px;
@@ -98,53 +123,30 @@ a:visited {
         }
     }
 
-    &__evisit {
-        background: url(./icon/ekonsultacje-bottom.svg) no-repeat top center;
+    &__item {
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
         align-items: center;
-        padding-top: 30px;
-    }
+        width: 52px;
+        max-width: 52px;
+        min-height: 52px;
+        position: relative;
+        &--logo {
+            max-width: 24px;
+            width: initial;
+            height: initial;
+            z-index: 1;
+            position: initial;
+            transform: initial;
+            margin-top: 4px;
+            filter: invert(46%) sepia(6%) saturate(8%) hue-rotate(7deg) brightness(98%) contrast(99%);
+        }
+        &--text {
+            white-space: nowrap;
+            position: absolute;
+            bottom: 0px;
+        }
 
-    &__treatment {
-        background: url(./icon/leczenie-bottom.svg) no-repeat top center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 30px;
-    }
-
-    &__left {
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-between;
-        padding-left: 8px;
-        width: 34%;
-    }
-
-    &__more {
-        background: url(./icon/wiecej-bottom.svg) no-repeat top center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 30px;
-        margin-left: 10px;
-    }
-
-    &__drugs {
-        background: url(./icon/leki-bottom.svg) no-repeat top center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 30px;
-        margin-right: 10px;
-    }
-
-    &__right {
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-between;
-        padding-left: 8px;
-        width: 36%;
     }
 }
