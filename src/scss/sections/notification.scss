@@ -1,0 +1,43 @@
+.notification {
+display: flex;
+flex-direction: column;
+overflow: hidden;
+background: #FFFFFF;
+border: 1px solid #E0E0E0;
+box-sizing: border-box;
+border-radius: 16px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+&__arrow {
+    span {}
+}
+
+&____background {
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%)
+}
+
+&__bottom {
+
+    &--inbox {}
+}
+&__button {}
+&__hello {}
+&__info {}
+&__number {
+    &--elipse {}
+}
+
+&__middle{
+    display: flex;
+flex-direction: column;
+border-bottom: 2px solid#E0E0E0;
+border-top: 2px solid #E0E0E0;
+}
+
+&__top {
+    overflow: hidden;
+}
+}
+
