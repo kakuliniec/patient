@@ -1,12 +1,91 @@
-.button-filter {
-    background: #ffffff;
-    border: 1px solid #e0e0e0;
-    box-sizing: border-box;
-    border-radius: 20px;
-    color: #0253b1;
+.history {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 8px;
+    padding: 9px 0px;
+
+    span {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    &__container {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        @media (max-width: $desktop) {
+            overflow-x: scroll;
+            gap: 16px;
+        }
+    }
+
+    &__button {
+        &--close {
+            border: none;
+            background-color: transparent;
+            color: #0253b1;
+            font-size: 14px;
+            line-height: 19px;
+        }
+
+        &--other {
+            border: 1px solid #E0E0E0;
+            box-sizing: border-box;
+            border-radius: 21px;
+            background: #FFFFFF;
+            padding: 10.5px 12px;
+            font-size: 14px;
+            line-height: 19px;
+            color: #0253B1;
+        }
+
+        &--prescriptions {
+            background: url(./icon/history-prescription.svg), #FFFFFF;
+            background-repeat: no-repeat;
+            background-position: 12px center;
+            border: 1px solid #E0E0E0;
+            box-sizing: border-box;
+            border-radius: 21px;
+            padding: 10.5px 24px;
+            font-size: 14px;
+            line-height: 19px;
+            color: #0253B1;
+        }
+
+        &--tests {
+            background: url(./icon/history-tests.svg), #FFFFFF;
+            background-repeat: no-repeat;
+            background-position: 12px center;
+            border: 1px solid #E0E0E0;
+            box-sizing: border-box;
+            border-radius: 21px;
+            padding: 10.5px 24px;
+            font-size: 14px;
+            line-height: 19px;
+            color: #0253B1;
+        }
+
+        &--visits {
+            background: url(./icon/history-visits.svg), #FFFFFF;
+            background-repeat: no-repeat;
+            background-position: 12px center;
+            border: 1px solid #E0E0E0;
+            box-sizing: border-box;
+            border-radius: 21px;
+            padding: 10.5px 24px;
+            font-size: 14px;
+            line-height: 19px;
+            color: #0253B1;
+        }
+    }
 }
 
-.history {
+/*.history {
     &__buttons {
         display: flex;
         align-items: center;
@@ -92,83 +171,4 @@
             display: none;
         }
     }
-}
-
-.history-events {
-    margin-bottom: 16px;
-
-    @media (min-width: $desktop) {
-        display: flex;
-        margin-bottom: 16px;
-    }
-
-    &__april {
-        @media (max-width: $desktop) {
-            display: none;
-        }
-    }
-
-    &__details {
-        text-decoration: none;
-        visibility: visible;
-        color: #0258ba;
-        @media (max-width: $desktop) {
-            display: none;
-        }
-    }
-
-    &__february {
-        @media (max-width: $desktop) {
-            display: none;
-        }
-    }
-
-    &__header {
-        font-size: 14px;
-        line-height: 19px;
-        margin: 0 auto;
-        padding: 8px 172px 4px 16px;
-        font-weight: normal;
-
-        @media (min-width: $desktop) {
-            padding: 0px;
-            max-width: 88px;
-            margin-left: 20px;
-            margin-top: 31px;
-            margin-right: 8px;
-        }
-    }
-
-    &__january {
-        @media (max-width: $desktop) {
-            display: none;
-        }
-    }
-
-    &__march {
-        @media (max-width: $desktop) {
-            display: none;
-        }
-    }
-
-    &__may {
-        @media (max-width: $desktop) {
-            display: none;
-        }
-    }
-
-
-    &__month {
-        font-size: 16px;
-        line-height: 22px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        margin: 16px 0px;
-        display: block;
-        padding-left: 140px;
-        @media (max-width: $desktop) {
-            display: none;
-        }
-    }
-}
+}*/
