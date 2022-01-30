@@ -11,14 +11,14 @@
 <body>
 
     <header class="header">
-        <div class="container">
+        <div class="header__container">
             <div class="header__left">
                 <img src="./src/scss/icon/luxmed-logo.svg" class="header__logo" alt="">
                 <a class="header__link header__link--active">
                     <img src="./src/scss/icon/leczenie-bottom.svg" alt="" class="header__link--logo">
                     <span class="header__link--text">
                         Leczenie
-                    </span>                    
+                    </span>
                 </a>
                 <a class="header__link">
                     <img src="./src/scss/icon/leki-bottom.svg" alt="" class="header__link--logo">
@@ -38,23 +38,23 @@
                         Zapytaj lekarza
                     </span>
                 </a>
-                </div>
-                <div class="header__right">
-                    <button class="header__right--button">
-                        <img src="./src/scss/icon/umow-bottom.svg" alt="">
-                        <span class="header__right--text">
-                            Umów usługę
-                        </span>
-                    </button>
-                    <a class="header__link">
-                        <img src="./src/scss/icon/inbox.svg" alt="" class="header__link--logo">
-                    </a>
-                    <a class="header__link">
-                        <img src="./src/scss/icon/profile.svg" alt="" class="header__link--logo">
-                    </a>
-                </div>
             </div>
-        </header>
+            <div class="header__right">
+                <button class="header__right--button">
+                    <img src="./src/scss/icon/umow-bottom.svg" alt="">
+                    <span class="header__right--text">
+                        Umów usługę
+                    </span>
+                </button>
+                <a class="header__link">
+                    <img src="./src/scss/icon/inbox.svg" alt="" class="header__link--logo">
+                </a>
+                <a class="header__link">
+                    <img src="./src/scss/icon/profile.svg" alt="" class="header__link--logo">
+                </a>
+            </div>
+        </div>
+    </header>
 
 
 
@@ -94,53 +94,38 @@
                         </div>
                     </div>
 
-                    <div class="visit">
-
-                        <div class="visit__left">
-                            <img src="./src/scss/icon/timeline-rectangleWhite.svg" class="visit__left--rectangle"
-                                alt="">
-                            <img src="./src/scss/icon/timeline-elipseBlue.svg" class="visit__left--elipse" alt="">
-
+                    <div class="visitWrapper visit__today">
+                        <div class="visitDot"></div>
+                        <div class="visitDate">
+                            <img src="./src/scss/icon/timeline-rectangleWhite.svg" />
+                            <span>Dziś, 15:30</span>
                         </div>
-
-                        <span class="visit__header">Dziś 15:30</span>
-                        <div class="visit__msg">
-                            <img src="./src/scss/icon/blueLine.svg" class="visit__msg--blueLine" alt="">
-
-
-                            <div class="visit__top">
-                                <span class="visit__top--event">Okulista</span>
-                                <img src="./src/scss/icon/Vistit-arrowVector.svg" class="visit__top--arrow" alt="">
-                                <a href="#" class="navigation__font">Pokaż szczegóły
-
+                        <div class="visitCardWrapper">
+                            <img src="./src/scss/icon/blueLine.svg">
+                            <div class="visitCardUpper">
+                                <span>Internista</span>
+                                <img src="./src/scss/icon/Vistit-arrowVector.svg" />
+                                <a>Pokaż szczegóły</a>
                             </div>
-                            <div class="visit__desktop">
-                            <div class="visit__middle">
-                                <img src="./src/scss/icon/visit-doctorIcon.svg" class="visit__middle--iconDr" alt="">
-                                <div class="visit__details">
-                                    <span class="visit__middle--doctor">Dr n. med. Antoni Nowakowski
-                                    </span> 
-                                    <div>
-                                    <img src="./src/scss/icon/visit-localization.svg"
-                                        class="visit__middle--iconLocation" alt="">
-                                    <span class="visit__middle--address">ul. Nowogrodzka 45
-                                    </span>
+                            <div class="visitCardLowerWrapper">
+                                <div class="visitCardLowerContainer">
+                                    <img src="./src/scss/icon/visit-doctorIcon.svg" />
+                                    <div class="visitCardLowerDetails">
+                                        <span>Dr n. med. Mariusz Andryszewski</span>
+                                        <span>
+                                            <img src="./src/scss/icon/visit-localization.svg" />
+                                            ul. Chmielna 85/87
+                                        </span>
+                                    </div>
                                 </div>
+                                <div class="visitCardActionContainer">
+                                    <a class="visitCardActionSecondary">Zmień termin</a>
+                                    <a class="visitCardActionPrimary">Odwołaj</a>
                                 </div>
                             </div>
-                            <div class="visit__bottom">
-                                <button class="visit__bottom--change" alt="change visit' date button">
-                                    Zmień termin
-                                </button>
-                                <button class="visit__bottom--cancel" alt="cancel visit button">
-                                    Odwołaj
-                                </button>
-                            </div>
-                        </div>
                         </div>
                     </div>
-
-                    <div class="history">
+                    <!--                <div class="history">
                         <span class="history__header">Historia</span>
                         <div class="history__buttons">
                             <button class="history__buttons--visits button-filter"
@@ -156,9 +141,9 @@
                             <button class="history__buttons--enter"
                                 alt="history' enter button">>></button>
                         </div>
-                    </div>
+                    </div>-->
 
-                    <div class="history-events" id="history-events1">
+                    <!--                   <div class="history-events" id="history-events1">
                         <span class="history-events__header">Piątek 5 cze 14:30
                         </span>
                         <img src="./src/scss/icon/timeline-elipseGrey.svg" class="visit__left--elipse" alt="">
@@ -382,8 +367,214 @@
                         </div>
                     </div>
                 </div>
+            -->
+                    <div class="historyWrapper">
+                        <span>Historia</span>
+                        <div class="historyContainer">
+                            <button>
+                                Wizyty
+                            </button>
+                            <button>
+                                Badania
+                            </button>
+                            <button>
+                                Recepty
+                            </button>
+                            <button>
+                                Inne
+                            </button>
+                            <button>
+                                Zamknij
+                                <img src="./src/scss/icon/close-button.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
 
 
+                    <div class="eventsWrapper">
+
+                        <div class="visitWrapper">
+                            <div class="visitDot"></div>
+                            <div class="visitDate">
+                                <span>Piątek 24 kwi&nbsp;</span>
+                                <span>17:00</span>
+                            </div>
+                            <div class="visitCardWrapper">
+                                <div class="visitCardUpper">
+                                    <span>Internista</span>
+                                    <img src="./src/scss/icon/Vistit-arrowVector.svg" />
+                                    <a>Pokaż szczegóły</a>
+                                </div>
+                                <div class="visitCardLowerWrapper">
+                                    <div class="visitCardLowerContainer">
+                                        <img src="./src/scss/icon/visit-doctorIcon.svg" />
+                                        <div class="visitCardLowerDetails">
+                                            <span>Dr n. med. Mariusz Andryszewski</span>
+                                            <span>
+                                                <img src="./src/scss/icon/visit-localization.svg" />
+                                                ul. Chmielna 85/87
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <a>Oceń wizytę</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="visitMonth">Maj</div>
+                        <div class="visitWrapper">
+                            <div class="visitDot"></div>
+                            <div class="visitDate">
+                                <span>Piątek 24 kwi&nbsp;</span>
+                                <span>17:00</span>
+                            </div>
+                            <div class="visitCardWrapper">
+                                <div class="visitCardUpper">
+                                    <span>Internista</span>
+                                    <img src="./src/scss/icon/Vistit-arrowVector.svg" />
+                                    <a>Pokaż szczegóły</a>
+                                </div>
+                                <div class="visitCardLowerWrapper">
+                                    <div class="visitCardLowerContainer">
+                                        <img src="./src/scss/icon/visit-doctorIcon.svg" />
+                                        <div class="visitCardLowerDetails">
+                                            <span>Dr n. med. Mariusz Andryszewski</span>
+                                            <span>
+                                                <img src="./src/scss/icon/visit-localization.svg" />
+                                                ul. Chmielna 85/87
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <a>Oceń wizytę</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="visitMonth">Kwiecień</div>
+                        <div class="visitWrapper">
+                            <div class="visitDot"></div>
+                            <div class="visitDate">
+                                <span>Piątek 24 kwi&nbsp;</span>
+                                <span>17:00</span>
+                            </div>
+                            <div class="visitCardWrapper">
+                                <div class="visitCardUpper">
+                                    <span>Internista</span>
+                                    <img src="./src/scss/icon/Vistit-arrowVector.svg" />
+                                    <a>Pokaż szczegóły</a>
+                                </div>
+                                <div class="visitCardLowerWrapper">
+                                    <div class="visitCardLowerContainer">
+                                        <img src="./src/scss/icon/visit-doctorIcon.svg" />
+                                        <div class="visitCardLowerDetails">
+                                            <span>Dr n. med. Mariusz Andryszewski</span>
+                                            <span>
+                                                <img src="./src/scss/icon/visit-localization.svg" />
+                                                ul. Chmielna 85/87
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <a>Oceń wizytę</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="visitMonth">Marzec</div>
+                        <div class="visitWrapper">
+                            <div class="visitDot"></div>
+                            <div class="visitDate">
+                                <span>Piątek 24 kwi&nbsp;</span>
+                                <span>17:00</span>
+                            </div>
+                            <div class="visitCardWrapper">
+                                <div class="visitCardUpper">
+                                    <span>Internista</span>
+                                    <img src="./src/scss/icon/Vistit-arrowVector.svg" />
+                                    <a>Pokaż szczegóły</a>
+                                </div>
+                                <div class="visitCardLowerWrapper">
+                                    <div class="visitCardLowerContainer">
+                                        <img src="./src/scss/icon/visit-doctorIcon.svg" />
+                                        <div class="visitCardLowerDetails">
+                                            <span>Dr n. med. Mariusz Andryszewski</span>
+                                            <span>
+                                                <img src="./src/scss/icon/visit-localization.svg" />
+                                                ul. Chmielna 85/87
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <a>Oceń wizytę</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="visitMonth">Luty</div>
+                        <div class="visitWrapper">
+                            <div class="visitDot"></div>
+                            <div class="visitDate">
+                                <span>Piątek 24 kwi&nbsp;</span>
+                                <span>17:00</span>
+                            </div>
+                            <div class="visitCardWrapper">
+                                <div class="visitCardUpper">
+                                    <span>Internista</span>
+                                    <img src="./src/scss/icon/Vistit-arrowVector.svg" />
+                                    <a>Pokaż szczegóły</a>
+                                </div>
+                                <div class="visitCardLowerWrapper">
+                                    <div class="visitCardLowerContainer">
+                                        <img src="./src/scss/icon/visit-doctorIcon.svg" />
+                                        <div class="visitCardLowerDetails">
+                                            <span>Dr n. med. Mariusz Andryszewski</span>
+                                            <span>
+                                                <img src="./src/scss/icon/visit-localization.svg" />
+                                                ul. Chmielna 85/87
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <a>Oceń wizytę</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="visitMonth">Styczeń</div>
+                        <div class="visitWrapper">
+                            <div class="visitDot"></div>
+                            <div class="visitDate">
+                                <span>Piątek 24 kwi&nbsp;</span>
+                                <span>17:00</span>
+                            </div>
+                            <div class="visitCardWrapper">
+                                <div class="visitCardUpper">
+                                    <span>Internista</span>
+                                    <img src="./src/scss/icon/Vistit-arrowVector.svg" />
+                                    <a>Pokaż szczegóły</a>
+                                </div>
+                                <div class="visitCardLowerWrapper">
+                                    <div class="visitCardLowerContainer">
+                                        <img src="./src/scss/icon/visit-doctorIcon.svg" />
+                                        <div class="visitCardLowerDetails">
+                                            <span>Dr n. med. Mariusz Andryszewski</span>
+                                            <span>
+                                                <img src="./src/scss/icon/visit-localization.svg" />
+                                                ul. Chmielna 85/87
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <a>Oceń wizytę</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
 
                 </div>
             </div>
@@ -395,14 +586,14 @@
     </div>
 
     <div class="bottomMenu">
-        <img src="./src/scss/img/bottom-menu.png" class="bottomMenu__background" alt=""/>
+        <img src="./src/scss/img/bottom-menu.png" class="bottomMenu__background" alt="" />
         <div class="navigation">
             <div class="navigation__item navigation__active">
-                <img src="./src/scss/icon/leczenie-bottom.svg" class="navigation__active--logo" alt=""/>
+                <img src="./src/scss/icon/leczenie-bottom.svg" class="navigation__active--logo" alt="" />
                 <a href="#" class="navigation__active--text">Leczenie</a>
             </div>
             <div class="navigation__item">
-                <img src="./src/scss/icon/leki-bottom.svg" class="navigation__item--logo" alt=""/>
+                <img src="./src/scss/icon/leki-bottom.svg" class="navigation__item--logo" alt="" />
                 <a href="#" class="navigation__item--text">Leki</a>
             </div>
             <div class="navigation__item">
@@ -415,11 +606,11 @@
                 <a href="#" class="navigation__item--text">e-Konsultacje</a>
             </div>
             <div class="navigation__item">
-                <img src="./src/scss/icon/wiecej-bottom.svg" class="navigation__item--logo" alt=""/>
+                <img src="./src/scss/icon/wiecej-bottom.svg" class="navigation__item--logo" alt="" />
                 <a href="#" class="navigation__item--text">Więcej</a>
             </div>
 
-    <script src="./src/js/main.js"></script>
+            <script src="./src/js/main.js"></script>
 </body>
 
 </html>

@@ -1,131 +1,89 @@
-.container {
-    font-style: normal;
-    display: flex;
-    flex-flow: row;
-    color: #000000;
-    align-items: center;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    margin: 0 auto;
-}
-
 .header {
-    width: 1280px;
-    height: 72px;
-    left: 50%;
-    background: #fff;
-    box-shadow: 0 4px 16px rgb(0 0 0 / 15%);
 
-    &__left {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-    }
-
-    &__logo {
-        padding: 0px 50px 14px 0px;
-    }
-
-    @media (max-width: $desktop) {
-        display: none;
-    }
-
-    &__right {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .container {
-        padding: 12px 23px 12px 72px;
-        flex-wrap: nowrap;
-    }
-
-    .navigation {
-        font-weight: 400;
-        font-size: 13px;
-        line-height: 18px;
-
-        &__askDoctor {
-            background: url(./icon/askDoctor.svg) no-repeat left center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 0px 0px 0px 30px;
-            margin-right: 228px;
-        }
-
-        &__bookVisit {
-            background: linear-gradient(270deg, #38e475 0%, #36c268 100%);
-            box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
-            border-radius: 36px;
-            padding: 11px 20px;
-            border: 0;
-
-            &--inside {
-                margin: 0 auto;
-                padding: 0px 0px 0px 24px;
-                background: url(./icon/umow-bottom.svg) no-repeat left center;
-                font-size: 14px;
-                line-height: 19px;
-                font-weight: normal;
-                background-size: 16px 16px;
-                color: #000;
-            }
-        }
-
-        &__drugs {
-            padding: 0px 0px 0px 30px;
-            margin-right: 35px;
-            background: url(./icon/leki-bottom.svg) no-repeat left center;
-        }
-
-        &__evisit {
-            padding: 0px 0px 0px 30px;
-            margin-right: 40px;
-            background: url(./icon/ekonsultacje-bottom.svg) no-repeat left center;
-        }
-
-        &__font {
-            text-decoration: none;
-            visibility: visible;
-            color: #0258ba;
-            @media (max-width: $desktop) {
+        justify-content: center;
+        width: 100%;
+        padding: 12px 72px;
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+        @media (max-width: 1024px) {
+            .header__link--text {
                 display: none;
             }
         }
-
-        &__inbox {
-            background: url(./icon/inbox.svg) no-repeat center center;
-            height: 27px;
-            width: 36px;
-            margin-left: 28px;
+        @media (max-width: 820px) {
+            padding: 12px 20px;
+        }
+        @media (max-width: 512px) {
+            display: none;
         }
 
-        &__left {
-            list-style: none;
-            width: 100%;
-            padding-left: 0px;
+    &__container {
+        display: flex;
+        width: 100%;
+        max-width: 1136px;
+        justify-content: space-between;
+    }
+
+    &__left {
+        display: flex;
+        gap: 16px;
+        @media (max-width: 820px) {
+            gap: 4px;
+        }
+    }
+    &__logo {
+        margin-right: 26px;
+        width: 130px;
+        @media (max-width: 820px) {
+            display: none;
+        }
+    }
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        @media (max-width: 820px) {
+            gap: 4px;
+        }
+        &--button {
+            display: flex;
             align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-right: 16px;
+            color: #000000;
+            background: linear-gradient(270deg, #38E475 0%, #36C268 100%);
+            box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+            border-radius: 36px;
+            font-size: 14px;
+            line-height: 19px;
+            border: none;
+            padding: 10px 16px;
+            @media (max-width: 820px) {
+                .header__right--text {
+                    display: none;
+                }
+            }
         }
+    }
 
-        &__profile {
-            background: url(./icon/profile.svg) no-repeat center center;
-            height: 34px;
-            width: 24px;
-            margin-left: 14px;
+    &__link {
+        @media (max-width: 1024px) {
+            .header__link--text {
+                display: none;
+            }
         }
+        padding: 10px 8px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 13px;
+        line-height: 18px;
+        color: #0253B1;
 
-        &__right {
-            width: 100%;
-            padding-left: 0px;
-            align-items: center;
-        }
-
-        &__treatment {
-            padding: 0px 0px 0px 30px;
-            margin-right: 35px;
-            background: url(./icon/leczenie-bottom.svg) no-repeat left center;
+        &--active {
+            border-bottom: 2px solid #0253B1;
             font-weight: bold;
         }
     }
