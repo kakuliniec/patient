@@ -94,280 +94,38 @@
                         </div>
                     </div>
 
-                    <div class="visitWrapper visit__today">
-                        <div class="visitDot"></div>
-                        <div class="visitDate">
+                    <div class="visit__content visit__today">
+                        <div class="visit__dot"></div>
+                        <div class="visit__date">
                             <img src="./src/scss/icon/timeline-rectangleWhite.svg" />
                             <span>Dziś, 15:30</span>
                         </div>
-                        <div class="visitCardWrapper">
+                        <div class="visit-card__content">
                             <img src="./src/scss/icon/blueLine.svg">
-                            <div class="visitCardUpper">
+                            <div class="visit-card__top">
                                 <span>Internista</span>
                                 <img src="./src/scss/icon/Vistit-arrowVector.svg" />
                                 <a>Pokaż szczegóły</a>
                             </div>
-                            <div class="visitCardLowerWrapper">
-                                <div class="visitCardLowerContainer">
+                            <div class="visit-card__bottom">
+                                <div class="visit-card__bottom--container">
                                     <img src="./src/scss/icon/visit-doctorIcon.svg" />
-                                    <div class="visitCardLowerDetails">
-                                        <span>Dr n. med. Mariusz Andryszewski</span>
+                                    <div class="visit-card__bottom--details">
+                                        <span>Dr n. med. Antoni Nowakowski</span>
                                         <span>
                                             <img src="./src/scss/icon/visit-localization.svg" />
-                                            ul. Chmielna 85/87
+                                            ul. Nowogrodzka 45
                                         </span>
                                     </div>
                                 </div>
-                                <div class="visitCardActionContainer">
-                                    <a class="visitCardActionSecondary">Zmień termin</a>
-                                    <a class="visitCardActionPrimary">Odwołaj</a>
+                                <div class="visit-card__action--container">
+                                    <a class="visit-card__action--change">Zmień termin</a>
+                                    <a class="visit-card__action--cancel">Odwołaj</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--                <div class="history">
-                        <span class="history__header">Historia</span>
-                        <div class="history__buttons">
-                            <button class="history__buttons--visits button-filter"
-                                alt="history' visits button">Wizyty</button>
-                            <button class="history__buttons--tests button-filter"
-                                alt="history' tests button">Badania</button>
-                            <button class="history__buttons--prescriptions button-filter"
-                                alt="history' prescriptions button">Recepty</button>
-                                <button class="history__buttons--other button-filter"
-                                alt="history' other button">Inne</button>
-                            <button class="history__buttons--close"
-                                alt="history' close button">Zamknij</button>
-                            <button class="history__buttons--enter"
-                                alt="history' enter button">>></button>
-                        </div>
-                    </div>-->
 
-                    <!--                   <div class="history-events" id="history-events1">
-                        <span class="history-events__header">Piątek 5 cze 14:30
-                        </span>
-                        <img src="./src/scss/icon/timeline-elipseGrey.svg" class="visit__left--elipse" alt="">
-
-                        <div class="visit__msg">
-                            <div class="visit__top">
-                                <span class="visit__top--event">Ortopeda</span>
-                                <img src="./src/scss/icon/Vistit-arrowVector.svg" class="visit__top--arrow" alt="">
-                                <a href="#" class="history-events__details">Pokaż szczegóły
-
-                            </div>
-                            <div class="visit__desktop">
-                            <div class="visit__middle history-events__middle">
-                                <img src="./src/scss/icon/visit-doctorIcon.svg" class="visit__middle--iconDr" alt="">
-                                <div class="visit__details">
-                                    <span class="visit__middle--doctor">Dr n. med. Anna Nowak
-                                    </span>
-                                    <img src="./src/scss/icon/visit-localization.svg"
-                                        class="visit__middle--iconLocation" alt="">
-                                    <span class="visit__middle--address">ul. Chmielna 85/87
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="visit__bottom">
-                                <button class="visit__bottom--change" alt="change visit' date button">
-                                    Oceń wizytę
-                                </button>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-
-                    <div class="history-events__may">
-                        <span class="history-events__month">Maj</span>
-                    <div class="history-events" id="MAY">
-                        <span class="history-events__header">Piątek 15 maj 12:15
-
-                        </span>
-                        <img src="./src/scss/icon/timeline-elipseGrey.svg" class="visit__left--elipse" alt="">
-
-                        <div class="visit__msg">
-                            <div class="visit__top">
-                                <span class="visit__top--event">Stomatolog</span>
-                                <img src="./src/scss/icon/Vistit-arrowVector.svg" class="visit__top--arrow" alt="">
-                                <a href="#" class="history-events__details">Pokaż szczegóły
-
-                            </div>
-                            <div class="visit__desktop">
-                            <div class="visit__middle history-events__middle">
-                                <img src="./src/scss/icon/visit-doctorIcon.svg" class="visit__middle--iconDr" alt="">
-                                <div class="visit__details">
-                                    <span class="visit__middle--doctor">Dr n. med. Mariusz Andryszewski
-
-                                    </span>
-                                    <img src="./src/scss/icon/visit-localization.svg"
-                                        class="visit__middle--iconLocation" alt="">
-                                    <span class="visit__middle--address">ul. Chmielna 85/87
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="visit__bottom">
-                                <button class="visit__bottom--change" alt="change visit' date button">
-                                    Oceń wizytę
-                                </button>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="history-events__april">
-                    <span class="history-events__month">Kwiecień</span>
-                    <div class="history-events" id="APRIL">
-                        <span class="history-events__header">Piątek 24 kwi 17:00
-
-                        </span>
-                        <img src="./src/scss/icon/timeline-elipseGrey.svg" class="visit__left--elipse" alt="">
-
-                        <div class="visit__msg">
-                            <div class="visit__top">
-                                <span class="visit__top--event">Endokrynolog</span>
-                                <img src="./src/scss/icon/Vistit-arrowVector.svg" class="visit__top--arrow" alt="">
-                                <a href="#" class="history-events__details">Pokaż szczegóły
-
-                            </div>
-                            <div class="visit__desktop">
-                            <div class="visit__middle history-events__middle">
-                                <img src="./src/scss/icon/visit-doctorIcon.svg" class="visit__middle--iconDr" alt="">
-                                <div class="visit__details">
-                                    <span class="visit__middle--doctor">Dr n. med. Agata Wyszyńska
-
-                                    </span>
-                                    <img src="./src/scss/icon/visit-localization.svg"
-                                        class="visit__middle--iconLocation" alt="">
-                                    <span class="visit__middle--address">ul. Nowogrodzka 45
-
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="visit__bottom">
-                                <button class="visit__bottom--change" alt="change visit' date button">
-                                    Oceń wizytę
-                                </button>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="history-events__march">
-                    <span class="history-events__month">Marzec</span>
-                    <div class="history-events" id="MARCH">
-                        <span class="history-events__header">Piątek
-                            05 mar 14:30
-                        </span>
-                        <img src="./src/scss/icon/timeline-elipseGrey.svg" class="visit__left--elipse" alt="">
-
-                        <div class="visit__msg">
-                            <div class="visit__top">
-                                <span class="visit__top--event">Ortopeda</span>
-                                <img src="./src/scss/icon/Vistit-arrowVector.svg" class="visit__top--arrow" alt="">
-                                <a href="#" class="history-events__details">Pokaż szczegóły
-
-                            </div>
-                            <div class="visit__desktop">
-                            <div class="visit__middle history-events__middle">
-                                <img src="./src/scss/icon/visit-doctorIcon.svg" class="visit__middle--iconDr" alt="">
-                                <div class="visit__details">
-                                    <span class="visit__middle--doctor">Dr n. med. Anna Nowak
-                                    </span>
-                                    <img src="./src/scss/icon/visit-localization.svg"
-                                        class="visit__middle--iconLocation" alt="">
-                                    <span class="visit__middle--address">ul. Chmielna 85/87
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="visit__bottom">
-                                <button class="visit__bottom--change" alt="change visit' date button">
-                                    Oceń wizytę
-                                </button>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="history-events__february">
-                    <span class="history-events__month">Luty</span>
-                    <div class="history-events" id="FEBRUARY">
-                        <span class="history-events__header">Piątek
-                            05 mar 17:30
-                        </span>
-                        <img src="./src/scss/icon/timeline-elipseGrey.svg" class="visit__left--elipse" alt="">
-
-                        <div class="visit__msg">
-                            <div class="visit__top">
-                                <span class="visit__top--event">Endokrynolog</span>
-                                <img src="./src/scss/icon/Vistit-arrowVector.svg" class="visit__top--arrow" alt="">
-                                <a href="#" class="history-events__details">Pokaż szczegóły
-
-                            </div>
-                            <div class="visit__desktop">
-                            <div class="visit__middle history-events__middle">
-                                <img src="./src/scss/icon/visit-doctorIcon.svg" class="visit__middle--iconDr" alt="">
-                                <div class="visit__details">
-                                    <span class="visit__middle--doctor">Dr n. med. Agata Wyszyńska
-
-                                    </span>
-                                    <img src="./src/scss/icon/visit-localization.svg"
-                                        class="visit__middle--iconLocation" alt="">
-                                    <span class="visit__middle--address">ul. Nowogrodzka 45
-
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="visit__bottom">
-                                <button class="visit__bottom--change" alt="change visit' date button">
-                                    Oceń wizytę
-                                </button>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="history-events__january">
-                    <span class="history-events__month">Styczeń</span>
-                    <div class="history-events" id="JANUARY">
-                        <span class="history-events__header">Piątek
-                            09 sty 09:45
-                        </span>
-                        <img src="./src/scss/icon/timeline-elipseGrey.svg" class="visit__left--elipse" alt="">
-
-                        <div class="visit__msg">
-                            <div class="visit__top">
-                                <span class="visit__top--event">Internista</span>
-                                <img src="./src/scss/icon/Vistit-arrowVector.svg" class="visit__top--arrow" alt="">
-                                <a href="#" class="history-events__details">Pokaż szczegóły
-
-                            </div>
-                            <div class="visit__desktop">
-                            <div class="visit__middle history-events__middle">
-                                <img src="./src/scss/icon/visit-doctorIcon.svg" class="visit__middle--iconDr" alt="">
-                                <div class="visit__details">
-                                    <span class="visit__middle--doctor">Dr n. med. Adrianna Mikiewicz
-
-                                    </span>
-                                    <img src="./src/scss/icon/visit-localization.svg"
-                                        class="visit__middle--iconLocation" alt="">
-                                    <span class="visit__middle--address">ul. Nowogrodzka 45
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="visit__bottom">
-                                <button class="visit__bottom--change" alt="change visit' date button">
-                                    Oceń wizytę
-                                </button>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            -->
                     <div class="historyWrapper">
                         <span>Historia</span>
                         <div class="historyContainer">
@@ -391,25 +149,25 @@
                     </div>
 
 
-                    <div class="eventsWrapper">
+                    <div class="visit">
 
-                        <div class="visitWrapper">
-                            <div class="visitDot"></div>
-                            <div class="visitDate">
-                                <span>Piątek 24 kwi&nbsp;</span>
-                                <span>17:00</span>
+                        <div class="visit__content">
+                            <div class="visit__dot"></div>
+                            <div class="visit__date">
+                                <span>Piątek&nbsp;</span>
+                                <span>05 cze 14:30</span>
                             </div>
-                            <div class="visitCardWrapper">
-                                <div class="visitCardUpper">
-                                    <span>Internista</span>
+                            <div class="visit-card__content">
+                                <div class="visit-card__top">
+                                    <span>Ortopeda</span>
                                     <img src="./src/scss/icon/Vistit-arrowVector.svg" />
                                     <a>Pokaż szczegóły</a>
                                 </div>
-                                <div class="visitCardLowerWrapper">
-                                    <div class="visitCardLowerContainer">
+                                <div class="visit-card__bottom">
+                                    <div class="visit-card__bottom--container">
                                         <img src="./src/scss/icon/visit-doctorIcon.svg" />
-                                        <div class="visitCardLowerDetails">
-                                            <span>Dr n. med. Mariusz Andryszewski</span>
+                                        <div class="visit-card__bottom--details">
+                                            <span>Dr n. med. Anna Nowak</span>
                                             <span>
                                                 <img src="./src/scss/icon/visit-localization.svg" />
                                                 ul. Chmielna 85/87
@@ -421,53 +179,23 @@
                             </div>
                         </div>
 
-                        <div class="visitMonth">Maj</div>
-                        <div class="visitWrapper">
-                            <div class="visitDot"></div>
-                            <div class="visitDate">
-                                <span>Piątek 24 kwi&nbsp;</span>
-                                <span>17:00</span>
+                        <div class="visit__month">Maj</div>
+                        <div class="visit__content">
+                            <div class="visit__dot"></div>
+                            <div class="visit__date">
+                                <span>Piątek&nbsp;</span>
+                                <span>15 maj 12:15</span>
                             </div>
-                            <div class="visitCardWrapper">
-                                <div class="visitCardUpper">
-                                    <span>Internista</span>
+                            <div class="visit-card__content">
+                                <div class="visit-card__top">
+                                    <span>Stomatolog</span>
                                     <img src="./src/scss/icon/Vistit-arrowVector.svg" />
                                     <a>Pokaż szczegóły</a>
                                 </div>
-                                <div class="visitCardLowerWrapper">
-                                    <div class="visitCardLowerContainer">
+                                <div class="visit-card__bottom">
+                                    <div class="visit-card__bottom--container">
                                         <img src="./src/scss/icon/visit-doctorIcon.svg" />
-                                        <div class="visitCardLowerDetails">
-                                            <span>Dr n. med. Mariusz Andryszewski</span>
-                                            <span>
-                                                <img src="./src/scss/icon/visit-localization.svg" />
-                                                ul. Chmielna 85/87
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <a>Oceń wizytę</a>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="visitMonth">Kwiecień</div>
-                        <div class="visitWrapper">
-                            <div class="visitDot"></div>
-                            <div class="visitDate">
-                                <span>Piątek 24 kwi&nbsp;</span>
-                                <span>17:00</span>
-                            </div>
-                            <div class="visitCardWrapper">
-                                <div class="visitCardUpper">
-                                    <span>Internista</span>
-                                    <img src="./src/scss/icon/Vistit-arrowVector.svg" />
-                                    <a>Pokaż szczegóły</a>
-                                </div>
-                                <div class="visitCardLowerWrapper">
-                                    <div class="visitCardLowerContainer">
-                                        <img src="./src/scss/icon/visit-doctorIcon.svg" />
-                                        <div class="visitCardLowerDetails">
+                                        <div class="visit-card__bottom--details">
                                             <span>Dr n. med. Mariusz Andryszewski</span>
                                             <span>
                                                 <img src="./src/scss/icon/visit-localization.svg" />
@@ -481,25 +209,55 @@
                         </div>
 
 
-
-                        <div class="visitMonth">Marzec</div>
-                        <div class="visitWrapper">
-                            <div class="visitDot"></div>
-                            <div class="visitDate">
-                                <span>Piątek 24 kwi&nbsp;</span>
-                                <span>17:00</span>
+                        <div class="visit__month">Kwiecień</div>
+                        <div class="visit__content">
+                            <div class="visit__dot"></div>
+                            <div class="visit__date">
+                                <span>Piątek&nbsp;</span>
+                                <span>24 kwi 17:00</span>
                             </div>
-                            <div class="visitCardWrapper">
-                                <div class="visitCardUpper">
-                                    <span>Internista</span>
+                            <div class="visit-card__content">
+                                <div class="visit-card__top">
+                                    <span>Endokrynolog</span>
                                     <img src="./src/scss/icon/Vistit-arrowVector.svg" />
                                     <a>Pokaż szczegóły</a>
                                 </div>
-                                <div class="visitCardLowerWrapper">
-                                    <div class="visitCardLowerContainer">
+                                <div class="visit-card__bottom">
+                                    <div class="visit-card__bottom--container">
                                         <img src="./src/scss/icon/visit-doctorIcon.svg" />
-                                        <div class="visitCardLowerDetails">
-                                            <span>Dr n. med. Mariusz Andryszewski</span>
+                                        <div class="visit-card__bottom--details">
+                                            <span>Dr n. med. Agata Wyszyńska</span>
+                                            <span>
+                                                <img src="./src/scss/icon/visit-localization.svg" />
+                                                ul. Nowogrodzka 45
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <a>Oceń wizytę</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="visit__month">Marzec</div>
+                        <div class="visit__content">
+                            <div class="visit__dot"></div>
+                            <div class="visit__date">
+                                <span>Piątek&nbsp;</span>
+                                <span>05 mar 14:30</span>
+                            </div>
+                            <div class="visit-card__content">
+                                <div class="visit-card__top">
+                                    <span>Ortopeda</span>
+                                    <img src="./src/scss/icon/Vistit-arrowVector.svg" />
+                                    <a>Pokaż szczegóły</a>
+                                </div>
+                                <div class="visit-card__bottom">
+                                    <div class="visit-card__bottom--container">
+                                        <img src="./src/scss/icon/visit-doctorIcon.svg" />
+                                        <div class="visit-card__bottom--details">
+                                            <span>Dr n. med. Anna Nowak</span>
                                             <span>
                                                 <img src="./src/scss/icon/visit-localization.svg" />
                                                 ul. Chmielna 85/87
@@ -512,27 +270,27 @@
                         </div>
 
 
-                        <div class="visitMonth">Luty</div>
-                        <div class="visitWrapper">
-                            <div class="visitDot"></div>
-                            <div class="visitDate">
-                                <span>Piątek 24 kwi&nbsp;</span>
-                                <span>17:00</span>
+                        <div class="visit__month">Luty</div>
+                        <div class="visit__content">
+                            <div class="visit__dot"></div>
+                            <div class="visit__date">
+                                <span>Piątek&nbsp;</span>
+                                <span>05 mar 17:30</span>
                             </div>
-                            <div class="visitCardWrapper">
-                                <div class="visitCardUpper">
-                                    <span>Internista</span>
+                            <div class="visit-card__content">
+                                <div class="visit-card__top">
+                                    <span>Endokrynolog</span>
                                     <img src="./src/scss/icon/Vistit-arrowVector.svg" />
                                     <a>Pokaż szczegóły</a>
                                 </div>
-                                <div class="visitCardLowerWrapper">
-                                    <div class="visitCardLowerContainer">
+                                <div class="visit-card__bottom">
+                                    <div class="visit-card__bottom--container">
                                         <img src="./src/scss/icon/visit-doctorIcon.svg" />
-                                        <div class="visitCardLowerDetails">
-                                            <span>Dr n. med. Mariusz Andryszewski</span>
+                                        <div class="visit-card__bottom--details">
+                                            <span>Dr n. med. Agata Wyszyńska</span>
                                             <span>
                                                 <img src="./src/scss/icon/visit-localization.svg" />
-                                                ul. Chmielna 85/87
+                                                ul. Nowogrodzka 45
                                             </span>
                                         </div>
                                     </div>
@@ -543,27 +301,27 @@
 
 
 
-                        <div class="visitMonth">Styczeń</div>
-                        <div class="visitWrapper">
-                            <div class="visitDot"></div>
-                            <div class="visitDate">
-                                <span>Piątek 24 kwi&nbsp;</span>
-                                <span>17:00</span>
+                        <div class="visit__month">Styczeń</div>
+                        <div class="visit__content">
+                            <div class="visit__dot"></div>
+                            <div class="visit__date">
+                                <span>Piątek&nbsp;</span>
+                                <span>09 sty 9:45</span>
                             </div>
-                            <div class="visitCardWrapper">
-                                <div class="visitCardUpper">
+                            <div class="visit-card__content">
+                                <div class="visit-card__top">
                                     <span>Internista</span>
                                     <img src="./src/scss/icon/Vistit-arrowVector.svg" />
                                     <a>Pokaż szczegóły</a>
                                 </div>
-                                <div class="visitCardLowerWrapper">
-                                    <div class="visitCardLowerContainer">
+                                <div class="visit-card__bottom">
+                                    <div class="visit-card__bottom--container">
                                         <img src="./src/scss/icon/visit-doctorIcon.svg" />
-                                        <div class="visitCardLowerDetails">
-                                            <span>Dr n. med. Mariusz Andryszewski</span>
+                                        <div class="visit-card__bottom--details">
+                                            <span>Dr n. med. Adrianna Mikiewicz</span>
                                             <span>
                                                 <img src="./src/scss/icon/visit-localization.svg" />
-                                                ul. Chmielna 85/87
+                                                ul. Nowogrodzka 45
                                             </span>
                                         </div>
                                     </div>

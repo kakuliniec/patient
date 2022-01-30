@@ -1,198 +1,230 @@
+
 .visit {
-    .container {
-        padding: 16px 0px 8px 0px;
-    }
-
-    @media (min-width: $desktop) {
+    &__month {
+        @media (max-width: $desktop) {
+            display: none;
+        }
         display: flex;
+        justify-content: center;
+        padding: 16px 0;
         position: relative;
+        margin-left: 116px;
+        &::before {
+            display: block;
+            position: absolute;
+            content: "";
+            width: 1.5px;
+            background-color: #b8b8b8;
+            height: 100%;
+            left: 4px;
+            transform: translateX(-50%);
+        }
+        &::before {
+            top: 0;
+        }
+
+        span {
+            font-size: 16px;
+            line-height: 22px;
+        }
     }
+    &__content {
+        &.visit__today {
+            &::before,
+            &::after {
+                display: none;
+            }
 
-    &__bottom {
-        display: flex;
-        justify-content: flex-end;
-        padding: 0px 16px 16px 73px;
+            .visit__date {
+                position: absolute;
+                left: -12px;
+                top: 50%;
+                transform: translate(-100%, -50%);
+                max-width: initial;
+                width: initial;
 
-        &--cancel {
-            background: #0253b1;
-            border-radius: 20px;
-            padding: 10px 16px;
-            align-items: center;
-            text-align: center;
-            color: #ffffff;
-            border: 1px solid #0253b1;
+                span {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    white-space: nowrap;
+                    color: #0258ba;
+                    font-weight: bold;
+                }
+            }
 
-            @media (min-width: $desktop) {
-                padding: 5px 16px;
-                margin: 10px 0px 16px 8px;
+            .visit__dot {
+                background: #0253b1;
+            }
+
+            .visit-card__content > img {
+                display: initial;
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+            }
+        }
+        @media (max-width: $desktop) {
+            margin-left: 0;
+            padding-top: 18px;
+            &::before,
+            &::after {
+                display: none !important;
             }
         }
 
-        &--change {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        position: relative;
+        margin-left: 116px;
+        &::before,
+        &::after {
+            display: block;
+            position: absolute;
+            content: "";
+            width: 1.5px;
+            background-color: #b8b8b8;
+            height: calc(50% - 8px);
+            left: 4px;
+            transform: translateX(-50%);
+        }
+        &::before {
+            top: 0;
+        }
+        &::after {
+            bottom: 0;
+        }
+    }
+
+    &__dot {
+        @media (max-width: $desktop) {
+            display: none;
+        }
+        display: block;
+        width: 8px;
+        min-width: 8px;
+        min-height: 8px;
+        height: 8px;
+        border-radius: 8px;
+        background-color: #b8b8b8;
+    }
+
+    &__date {
+        @media (max-width: $desktop) {
+            top: -4px;
+            left: 16px;
+            transform: initial;
+            flex-direction: row;
+            max-width: initial;
+        }
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        left: -8px;
+        transform: translate(-100%, -50%);
+        max-width: 88px;
+        width: 100%;
+        top: 50%;
+
+        span {
+            font-size: 13px;
+            line-height: 18px;
+        }
+    }
+    .visit__content:last-of-type::after,
+    .visit__content:first-of-type::before {
+        display: none;
+    }
+}
+
+.visit-card {
+    &__action {
+        &--container {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            align-self: flex-end;
+        }
+        &--cancel {
+            background: #0253b1 !important;
+            color: white !important;
+        }
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        padding: 8px 16px 16px;
+        background-color: white;
+        border-radius: 8px;
+        gap: 4px;
+        width: 100%;
+        position: relative;
+
+        > img {
+            display: none;
+        }
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+        }
+        img {
+            display: none;
+            @media (max-width: $desktop) {
+                display: initial;
+            }
+        }
+        a {
+            font-size: 13px;
+            line-height: 18px;
+            color: #0258ba;
+            cursor: pointer;
+            @media (max-width: $desktop) {
+                display: none;
+            }
+        }
+    }
+    &__bottom {
+        @media (max-width: $desktop) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+            a {
+                padding: 10px 16px !important;
+            }
+        }
+
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        a {
             background: #ffffff;
             border: 1px solid #0253b1;
             border-radius: 20px;
-            padding: 10px 16px;
-            align-items: center;
-            text-align: center;
+            padding: 5px 16px;
             color: #0253b1;
-            margin-right: 14px;
-
-            @media (min-width: $desktop) {
-                padding: 5px 16px;
-                margin: 10px 0px 16px 0px;
-            }
+            cursor: pointer;
+            align-self: flex-end;
+            text-align: center;
         }
 
-        @media (min-width: $desktop) {
-            margin-left: 194px;
-            padding: 0px;
-        }
-    }
-
-    &__details {
-        padding: 0px 0px 0px 10px;
-    }
-
-    &__desktop {
-        @media (min-width: $desktop) {
+        &--container {
             display: flex;
+            align-items: center;
+            gap: 8px;
         }
-    }
-
-    &__header {
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 19px;
-        color: #0253b1;
-        margin: 0 auto;
-        padding: 16px 119px 4px 16px;
-
-        @media (min-width: $desktop) {
-            position: absolute;
-            top: 16px;
-            left: 20px;
-            padding: 22px 0px 0px 0px;
-        }
-    }
-
-    &__left {
-        display: flex;
-        position: relative;
-
-        @media (max-width: $desktop) {
-            display: none;
-        }
-
-        &--elipse {
-            margin-right: 16px;
-            max-width: 8px;
-            @media (max-width: $desktop) {
-                display: none;
-            }
-        }
-
-        &--rectangle {
-            margin: 0px 12px 16px 0px;
-
-            @media (max-width: $desktop) {
-                display: none;
-            }
-        }
-    }
-
-    &__middle {
-        padding: 0px 31px 13px 16px;
-        display: flex;
-
-        &--address {
-            line-height: 19px;
-        }
-
-        &--doctor {
-            line-height: 19px;
+        &--details {
             display: flex;
-        }
-
-        &--iconLocation {
-            padding-top: 2px;
-        }
-
-        @media (min-width: $desktop) {
-            padding: 0px 0px 13px 16px;
-        }
-    }
-
-    &__msg {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        background: #ffffff;
-        border-radius: 8px;
-
-        @media (min-width: $desktop) {
-            max-height: 98px;
-        }
-
-        &--blueLine {
-            position: absolute;
-            @media (min-width: $desktop) {
-                left: 0%;
-                right: 0%;
-                top: 0%;
-                bottom: 0%;
-                height: 100%;
-                max-height: 98px;
-            }
-        }
-    }
-
-    &__rectangleWhite {
-        @media (max-width: $desktop) {
-            display: none;
-        }
-    }
-
-    &__top {
-        display: flex;
-        align-items: baseline;
-        margin-bottom: 4px;
-        justify-content: space-between;
-        padding: 9px 14px 4px 16px;
-
-        @media (min-width: $desktop) {
-            visibility: hidden;
-            position: relative;
-        }
-
-        &--arrow {
-            @media (min-width: $desktop) {
-                display: none;
-            }
-        }
-
-        &--event {
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 22px;
-        }
-    }
-
-    &__top:after {
-        @media (min-width: $desktop) {
-            visibility: visible;
-            position: absolute;
-            top: 0;
-            left: 0;
-            content: "Internista";
-            display: flex;
-            align-items: baseline;
-            margin-bottom: 4px;
-            justify-content: space-between;
-            padding: 9px 14px 4px 16px;
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 22px;
+            flex-direction: column;
         }
     }
 }
