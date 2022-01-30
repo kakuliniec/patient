@@ -102,10 +102,22 @@
         margin-bottom: 16px;
     }
 
+    &__april {
+        @media (max-width: $desktop) {
+            display: none;
+        }
+    }
+
     &__details {
         text-decoration: none;
         visibility: visible;
         color: #0258ba;
+        @media (max-width: $desktop) {
+            display: none;
+        }
+    }
+
+    &__february {
         @media (max-width: $desktop) {
             display: none;
         }
@@ -126,6 +138,25 @@
             margin-right: 8px;
         }
     }
+
+    &__january {
+        @media (max-width: $desktop) {
+            display: none;
+        }
+    }
+
+    &__march {
+        @media (max-width: $desktop) {
+            display: none;
+        }
+    }
+
+    &__may {
+        @media (max-width: $desktop) {
+            display: none;
+        }
+    }
+
 
     &__month {
         font-size: 16px;
