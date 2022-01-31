@@ -19,4 +19,6 @@ To run:
 
 **E n j o y !** 😉 
 
-![Patient' portal](src/scss/img/patient-desktop.PNG)
+![Patient' portal desktop view](src/scss/img/patient-desktop.PNG)
+![Patient' portal mobile view](src/scss/img/patient-mobile.PNG)
+
