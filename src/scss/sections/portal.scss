@@ -21,6 +21,23 @@
                     url(./img/background.png);
                 background-size: cover;
                 padding: 16px 28px 38px 0px;
+                background-size: 500px;
+            }
+
+            &Bottom {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 36px;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 22px;
+                gap: 24px;
+
+                @media (max-width: $desktop) {
+                    display: none;
+                }
+
             }
         }
     }
