@@ -23,12 +23,12 @@
     }
 
     &__bottom {
-        color: #0258BA;
+        color: #0258ba;
         padding: 8px;
         display: flex;
         text-align: center;
         justify-content: center;
-        
+
         &--inbox {
             color: #0258ba;
         }
@@ -73,26 +73,22 @@
         align-items: center;
         gap: 16px;
         padding: 16px 0px;
-    
 
-    &--top {
-        font-size: 16px;
-        line-height: 22px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        color: #0253b1;
-        display: flex;
-    gap: 86px;
-      
-        &Nr {
-            color: #0253B1;
-}
+        &--top {
+            font-size: 16px;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #0253b1;
+            display: flex;
+            gap: 86px;
 
-        
-
+            &Nr {
+                color: #0253b1;
+            }
+        }
     }
-}
 
     &__top {
         overflow: hidden;
