@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    background: #ffffff;
+    background: $white;
     border: 1px solid #e0e0e0;
     box-sizing: border-box;
     border-radius: 16px;
@@ -30,11 +30,11 @@
     }
 
     &__button {
-        background: #0253b1;
-        border: 1px dashed #0253b1;
+        background: $blue;
+        border: 1px dashed $blue;
         box-sizing: border-box;
         border-radius: 20px;
-        color: #ffffff;
+        color: $white;
         padding: 5px 17px;
         display: flex;
         text-align: center;
@@ -75,12 +75,12 @@
             display: flex;
             align-items: center;
             text-align: center;
-            color: #0253b1;
+            color: $blue;
             display: flex;
             gap: 86px;
 
             &Nr {
-                color: #0253b1;
+                color: $blue;
             }
         }
     }

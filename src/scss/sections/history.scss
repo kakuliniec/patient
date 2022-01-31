@@ -19,7 +19,7 @@
     }
 
     &__button {
-        background: #ffffff;
+        background: $white;
         background-repeat: no-repeat;
         background-position: 12px center;
         border: 1px solid #e0e0e0;
@@ -28,7 +28,7 @@
         padding: 10.5px 24px;
         font-size: 14px;
         line-height: 19px;
-        color: #0253b1;
+        color: $blue;
         display: flex;
         gap: 5px;
         max-width: 102px;
@@ -37,7 +37,7 @@
         &--close {
             border: none;
             background-color: transparent;
-            color: #0253b1;
+            color: $blue;
             font-size: 14px;
             line-height: 19px;
             display: flex;

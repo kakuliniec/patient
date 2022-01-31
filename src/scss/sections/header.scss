@@ -13,7 +13,7 @@
     @media (max-width: 820px) {
         padding: 12px 20px;
     }
-    @media (max-width: 512px) {
+    @media (max-width: $desktop) {
         display: none;
     }
 
@@ -44,10 +44,10 @@
         gap: 8px;
         font-size: 13px;
         line-height: 18px;
-        color: #0253b1;
+        color: $blue;
 
         &--active {
-            border-bottom: 2px solid #0253b1;
+            border-bottom: 2px solid $blue;
             font-weight: bold;
         }
     }
@@ -73,7 +73,7 @@
             gap: 8px;
             margin-right: 16px;
             color: #000000;
-            background: linear-gradient(270deg, #38e475 0%, #36c268 100%);
+            background: linear-gradient(270deg, $green-light 0%, $green-dark 100%);
             box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
             border-radius: 36px;
             font-size: 14px;
