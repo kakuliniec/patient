@@ -19,4 +19,4 @@ To run:
 
 **E n j o y !** 😉 
 
-![Patient' portal](scss/img/patient-desktop.PNG)
+![Patient' portal](src/scss/img/patient-desktop.PNG)
