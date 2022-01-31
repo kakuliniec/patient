@@ -1,43 +1,108 @@
 .notification {
-display: flex;
-flex-direction: column;
-overflow: hidden;
-background: #FFFFFF;
-border: 1px solid #E0E0E0;
-box-sizing: border-box;
-border-radius: 16px;
-transform: matrix(-1, 0, 0, 1, 0, 0);
-
-&__arrow {
-    span {}
-}
-
-&____background {
-    top: 50%;
-    left: 50%; 
-    transform: translate(-50%, -50%)
-}
-
-&__bottom {
-
-    &--inbox {}
-}
-&__button {}
-&__hello {}
-&__info {}
-&__number {
-    &--elipse {}
-}
-
-&__middle{
     display: flex;
-flex-direction: column;
-border-bottom: 2px solid#E0E0E0;
-border-top: 2px solid #E0E0E0;
-}
-
-&__top {
+    flex-direction: column;
     overflow: hidden;
-}
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    border-radius: 16px;
+    max-width: 272px;
+    @media (max-width: $desktop) {
+        display: none;
+    }
+
+    &__arrow {
+        span {
+        }
+    }
+
+    &____background {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__bottom {
+        color: #0258BA;
+        padding: 8px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        
+        &--inbox {
+            color: #0258ba;
+        }
+    }
+
+    &__button {
+        background: #0253b1;
+        border: 1px dashed #0253b1;
+        box-sizing: border-box;
+        border-radius: 20px;
+        color: #ffffff;
+        padding: 5px 17px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__hello {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 33px;
+    }
+    &__info {
+        padding: 0 16px;
+    }
+    &__number {
+        font-weight: bold;
+        font-size: 13px;
+        &--elipse {
+            background: #37c86b;
+            border-radius: 50px;
+        }
+    }
+
+    &__middle {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 2px solid#E0E0E0;
+        border-top: 2px solid #e0e0e0;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        padding: 16px 0px;
+    
+
+    &--top {
+        font-size: 16px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #0253b1;
+        display: flex;
+    gap: 86px;
+      
+        &Nr {
+            color: #0253B1;
 }
 
+        
+
+    }
+}
+
+    &__top {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 11px;
+        background-image: url(./img/banner-background.png);
+        background-size: 500px;
+        padding: 11px;
+    }
+}
