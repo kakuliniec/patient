@@ -1,0 +1,29 @@
+.footer {
+    padding: 0px 72px 24px 72px;
+    gap: 40px;
+    font-size: 13px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #ECECEC;
+
+
+    @media (max-width: $desktop) {
+        display: none;
+    }
+
+    &__left {
+        display: flex;
+        gap:40px;
+
+        &Item {
+            color: #0258BA !important;
+        }
+    }
+
+    &__right {
+
+        &Item {}
+    }
+}

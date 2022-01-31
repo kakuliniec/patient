@@ -131,8 +131,16 @@
         top: 50%;
 
         span {
+            font-size: 14px;
+            line-height: 19px;
+
+            @media (min-width: $desktop)
+            {
             font-size: 13px;
             line-height: 18px;
+            }
+
+            
         }
     }
     .visit__content:last-of-type::after,
