@@ -12,20 +12,17 @@
 @import "./sections/upcoming.scss";
 @import "./sections/visit.scss";
 
-
 body {
     font-size: 14px;
-    font-family: "Open Sans",sans-serif;
+    font-family: "Open Sans", sans-serif;
     line-height: 19px;
     color: #000000;
 }
-
 
 html {
     box-sizing: border-box;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
-
 }
 
 *,

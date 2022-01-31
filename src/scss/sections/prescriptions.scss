@@ -4,16 +4,15 @@
     display: flex;
     flex-flow: column;
 
-
     &__msg {
-        background: #FFFFFF;
-        border: 1.5px dashed #E0E0E0;
+        background: #ffffff;
+        border: 1.5px dashed #e0e0e0;
         box-sizing: border-box;
         border-radius: 8px;
         padding: 8px 16px;
         display: flex;
-    justify-content: space-between;
-    align-items: center;
+        justify-content: space-between;
+        align-items: center;
 
         &--text {
             font-weight: 600;
@@ -27,7 +26,6 @@
         }
     }
 
-
     &__rectangle {
         display: flex;
         flex-flow: column;
@@ -38,7 +36,7 @@
             width: 98%;
             margin-top: -2px;
         }
-        
+
         &--small {
             width: 96%;
             margin-top: -2px;
@@ -49,5 +47,3 @@
         display: none;
     }
 }
-
-

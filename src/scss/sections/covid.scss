@@ -8,17 +8,20 @@
     background-image: url(./img/banner-background.png);
     background-size: 500px;
     border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
 
 
         &--text {
             font-weight: 700;
             line-height: 18px;
-            padding-right: 279px;
         }
-    }
+    
 
     @media (max-width: $desktop) {
         display: none;
     }
-
+    }
 }

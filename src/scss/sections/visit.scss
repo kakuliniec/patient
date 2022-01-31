@@ -1,33 +1,4 @@
-
 .visit {
-    &__month {
-        @media (max-width: $desktop) {
-            display: none;
-        }
-        display: flex;
-        justify-content: center;
-        padding: 16px 0;
-        position: relative;
-        margin-left: 116px;
-        &::before {
-            display: block;
-            position: absolute;
-            content: "";
-            width: 1.5px;
-            background-color: #b8b8b8;
-            height: 100%;
-            left: 4px;
-            transform: translateX(-50%);
-        }
-        &::before {
-            top: 0;
-        }
-
-        span {
-            font-size: 16px;
-            line-height: 22px;
-        }
-    }
     &__content {
         &.visit__today {
             &::before,
@@ -69,6 +40,8 @@
         @media (max-width: $desktop) {
             margin-left: 0;
             padding-top: 18px;
+            margin-bottom: 8px;
+            margin-top: 8px;
             &::before,
             &::after {
                 display: none !important;
@@ -97,6 +70,11 @@
         &::after {
             bottom: 0;
         }
+    }
+
+    .visit__content:last-of-type::after,
+    .visit__content:first-of-type::before {
+        display: none;
     }
 
     &__dot {
@@ -134,18 +112,40 @@
             font-size: 14px;
             line-height: 19px;
 
-            @media (min-width: $desktop)
-            {
-            font-size: 13px;
-            line-height: 18px;
+            @media (min-width: $desktop) {
+                font-size: 13px;
+                line-height: 18px;
             }
-
-            
         }
     }
-    .visit__content:last-of-type::after,
-    .visit__content:first-of-type::before {
-        display: none;
+
+    &__month {
+        @media (max-width: $desktop) {
+            display: none;
+        }
+        display: flex;
+        justify-content: center;
+        padding: 16px 0;
+        position: relative;
+        margin-left: 116px;
+        &::before {
+            display: block;
+            position: absolute;
+            content: "";
+            width: 1.5px;
+            background-color: #b8b8b8;
+            height: 100%;
+            left: 4px;
+            transform: translateX(-50%);
+        }
+        &::before {
+            top: 0;
+        }
+
+        span {
+            font-size: 16px;
+            line-height: 22px;
+        }
     }
 }
 
@@ -162,6 +162,43 @@
             color: white !important;
         }
     }
+
+    &__bottom {
+        @media (max-width: $desktop) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+            a {
+                padding: 10px 16px !important;
+            }
+        }
+
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        a {
+            background: #ffffff;
+            border: 1px solid #0253b1;
+            border-radius: 20px;
+            padding: 5px 16px;
+            color: #0253b1;
+            cursor: pointer;
+            align-self: flex-end;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        &--container {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        &--details {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
     &__content {
         display: flex;
         flex-direction: column;
@@ -199,40 +236,6 @@
             @media (max-width: $desktop) {
                 display: none;
             }
-        }
-    }
-    &__bottom {
-        @media (max-width: $desktop) {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 16px;
-            a {
-                padding: 10px 16px !important;
-            }
-        }
-
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-between;
-        a {
-            background: #ffffff;
-            border: 1px solid #0253b1;
-            border-radius: 20px;
-            padding: 5px 16px;
-            color: #0253b1;
-            cursor: pointer;
-            align-self: flex-end;
-            text-align: center;
-        }
-
-        &--container {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        &--details {
-            display: flex;
-            flex-direction: column;
         }
     }
 }
