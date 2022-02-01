@@ -1,5 +1,5 @@
 
-# Patient - project based on Figma during a recruitment process I am taking part in. 
+# Patient - project based on Figma during the recruitment process I am taking part in. 
 It is for desktop view (512px or more) and mobile (below 512px).
 
 ## The tools which were used here:
