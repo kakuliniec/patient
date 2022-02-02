@@ -100,7 +100,7 @@ a:visited {
     &__bookNow {
         width: 52px;
         height: 52px;
-        background: linear-gradient(90deg, #36c268 0%, $green-light 105.48%);
+        background: linear-gradient(90deg, $green-dark 0%, $green-light 105.48%);
         border-radius: 50%;
         display: flex;
         justify-content: center;
